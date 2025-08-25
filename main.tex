@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\newlist{fancyitemize}{itemize}{1}
+\setlist[fancyitemize]{
+  label=\textcolor{deepgreen}{\raisebox{-0.15ex}{\Large\textbullet}},
+  left=1.5em,
+  itemsep=0.7em
+}
+\usepackage[
+  colorlinks=true,
+  urlcolor=darkblue,  
+  linkcolor=darkblue,     
+  citecolor=darkblue
+]{hyperref}
+
+% Fonts
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setmainfont{Fira Sans}
+
+% Define Colors
+\definecolor{darkblue}{HTML}{002B5C}
+\definecolor{brightorange}{HTML}{F28C00}
+\definecolor{lightgray}{HTML}{E6E6E6}
+\definecolor{textgray}{gray}{0.15}
+\definecolor{deepgreen}{HTML}{2F5E4E}
+
+% Page background color
+\pagecolor{lightgray}
+\color{textgray}
+
+% Title styling
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{darkblue}}{\thesection}{1em}{}
+
+% Header box
+\newtcolorbox{headerbox}{
+  colback=white,
+  colframe=darkblue,
+  width=\textwidth,
+  boxrule=0.8mm,
+  arc=3mm,
+  boxsep=4mm,
+  left=2mm,
+  right=2mm,
+  top=1mm,
+  bottom=1mm
+}
+
+% Highlight box
+\newtcolorbox{highlightbox}{
+  colback=brightorange!10,
+  colframe=brightorange,
+  boxrule=0.5mm,
+  arc=2mm,
+  boxsep=3mm,
+}
+
+\begin{document}
+
+\begin{headerbox}
+  \includegraphics[height=1.5cm]{TRR195_logo.png} \hfill
+  \textbf{\LARGE Onboarding Protocol}\\
+  \textcolor{darkblue}{SFB/TRR 195 – Graduate Programme}
+\end{headerbox}
+
+\vspace{1cm}
+
+\section{General Administration}
+Welcome to the IRTG! \lipsum[1][1-5]
+
+\begin{highlightbox}
+\textbf{You can also use these highlightboxes whenever you feel like} (probably should not overuse it to maintain readability!
+\end{highlightbox}
+
+\section{Communication \& Contact}
+\textbf{For emails, dates (and links, see below) I suggest using \textbackslash texttt:}\\
+Some email: \texttt{Email@example.de}\\
+Some date: \texttt{2025-04-30}\\
+Some link: \texttt{https://duckduckgo.com}
+
+\section{Important Links}
+There are two ways we could include links in this document: Either as plain text (bad for long links) or clickable within some sentence. For example:\\[5pt]
+Graduate programme: \texttt{https://www.computeralgebra.de/sfb/graduate-programme}\\
+Check out the \href{https://www.computeralgebra.de/sfb/graduate-programme}{\texttt{website}} of our graduate programme!
+
+\begin{highlightbox}
+    Just keep it consistent!
+\end{highlightbox}
+
+\section{Research \& Technical}
+This is how regular bullet points look in this template:
+
+\begin{itemize}
+  \item OSCAR Slack
+  \item GitHub
+  \item VPN Setup
+\end{itemize}
+
+I also made this version of itemize with bigger, green bullet points (but this might be too much). Feel free to tinker with the settings in the header of this document or just use the regular itemize/enumerate.
+
+\begin{fancyitemize}
+  \item OSCAR Slack
+  \item GitHub
+  \item VPN Setup
+\end{fancyitemize}
+
+\section{Training \& Development}
+Language courses and soft skill seminars?
+
+\section{Orientation \& Social Life}
+Get to know your fellow PhD students!
+
+\begin{fancyitemize}
+  \item Parties or something?
+  \item Informal local messenger groups?
+  \item Campus tour?
+\end{fancyitemize}
+
+\begin{highlightbox}
+\textbf{If you have feedback or suggestions regarding the template, put it here:} \begin{fancyitemize}
+    \item Remove the numbers from the sections? (Tobi)
+\end{fancyitemize}
+\end{highlightbox}
+
+\end{document}
