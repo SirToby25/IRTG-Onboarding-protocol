@@ -28,6 +28,13 @@ This file is the target of the QR-code in the onboarding protocol and contains a
 
 ---
 
+## Welcoming letter and old newsletter editions
+- **Welcoming letter**
+- **Old newsletter editions**
+  https://github.com/SirToby25/IRTG-Onboarding-protocol/tree/maintained_documents/old_newsletter_editions
+
+---
+
 ## Messenger App
 - **Signal group:**  
   https://signal.group/#CjQKIEFxuVhkESXsVB76L52Nw0ED3N-2i2oGRhpKE1o_s2UmEhBMhsVeNlGzvWK-927Z-6cU
